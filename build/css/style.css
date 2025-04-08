@@ -1,0 +1,159 @@
+/* Réinitialisation des marges et paddings par défaut pour une mise en page propre */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Poppins', sans-serif; /* Police moderne et élégante */
+    background-color: #fff5f7; /* Fond rose très clair */
+    color: #4a4a4a; /* Texte gris foncé pour contraste */
+    padding: 30px; /* Espace autour de la page */
+    line-height: 1.6; /* Meilleure lisibilité */
+}
+
+/* Style pour les titres */
+h2 {
+    color: #ff6f91; /* Rose vif pour les titres */
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 25px; /* Espace en dessous du titre */
+    font-weight: 600; /* Poids de la police */
+    text-transform: uppercase; /* Majuscules pour un look moderne */
+    letter-spacing: 1.5px; /* Espacement des lettres */
+}
+
+h3 {
+    color: #ff8fa3; /* Rose plus clair pour les sous-titres */
+    margin-top: 35px; /* Espace au-dessus */
+    margin-bottom: 15px; /* Espace en dessous */
+    font-weight: 500; /* Poids plus léger */
+}
+
+/* Style pour les paragraphes */
+p {
+    color: #6a6a6a; /* Gris moyen pour le texte */
+    margin-bottom: 15px; /* Espace en dessous des paragraphes */
+}
+
+/* Style pour le formulaire */
+form {
+    background-color: #fff; /* Fond blanc pour le formulaire */
+    padding: 25px; /* Espace à l'intérieur du formulaire */
+    border: 1px solid #ffe1e6; /* Bordure rose pâle */
+    border-radius: 10px; /* Coins arrondis plus prononcés */
+    max-width: 600px; /* Largeur maximale légèrement augmentée */
+    margin: 0 auto; /* Centrer le formulaire */
+    margin-bottom: 25px; /* Espace en dessous */
+    box-shadow: 0 4px 20px rgba(255, 111, 145, 0.1); /* Ombre rose subtile */
+}
+
+form div {
+    margin-bottom: 20px; /* Espace entre les champs du formulaire */
+}
+
+form label {
+    display: block; /* Mettre le label sur une nouvelle ligne */
+    color: #ff6f91; /* Rose vif pour le texte du label */
+    margin-bottom: 8px; /* Espace en dessous du label */
+    font-size: 14px; /* Taille de police plus petite */
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%; /* Prendre toute la largeur disponible */
+    padding: 10px; /* Espace à l'intérieur des champs */
+    border: 1px solid #ffd1d9; /* Bordure rose pâle */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #fff; /* Fond blanc */
+    color: #4a4a4a; /* Texte gris foncé */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transitions fluides */
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus {
+    border-color: #ff6f91; /* Bordure rose vif au focus */
+    box-shadow: 0 0 5px rgba(255, 111, 145, 0.3); /* Ombre rose au focus */
+    outline: none; /* Supprimer le contour par défaut */
+}
+
+form button {
+    background-color: #ff6f91; /* Rose vif pour le bouton */
+    color: #fff; /* Texte blanc */
+    padding: 12px 25px; /* Espace à l'intérieur du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main au survol */
+    font-size: 16px; /* Taille de police */
+    font-weight: 500; /* Poids de la police */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Transitions fluides */
+}
+
+form button:hover {
+    background-color: #ff4d77; /* Rose plus foncé au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+form button:disabled {
+    background-color: #d1d1d1; /* Couleur grise pour les boutons désactivés */
+    cursor: not-allowed; /* Curseur indiquant que le bouton est désactivé */
+    transform: none; /* Pas d'élévation */
+}
+
+/* Style pour les tableaux */
+table {
+    width: 100%; /* Prendre toute la largeur disponible */
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    margin-top: 25px; /* Espace au-dessus du tableau */
+    background-color: #fff; /* Fond blanc pour le tableau */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Pour que les coins arrondis s'appliquent correctement */
+    box-shadow: 0 4px 20px rgba(255, 111, 145, 0.1); /* Ombre rose subtile */
+}
+
+th, td {
+    border: 1px solid #ffe1e6; /* Bordure rose pâle */
+    padding: 12px; /* Espace à l'intérieur des cellules */
+    text-align: left; /* Alignement du texte à gauche */
+    color: #4a4a4a; /* Texte gris foncé */
+}
+
+th {
+    background-color: #ff6f91; /* Rose vif pour les en-têtes */
+    color: #fff; /* Texte blanc */
+    font-weight: 500; /* Poids de la police */
+}
+
+tr:nth-child(even) {
+    background-color: #fff9fa; /* Couleur de fond rose très pâle pour les lignes paires */
+}
+
+tr:hover {
+    background-color: #ffeef1; /* Couleur de fond rose pâle au survol d'une ligne */
+}
+
+/* Style pour les liens */
+a {
+    color: #ff6f91; /* Rose vif pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    margin-right: 15px; /* Espace entre les liens */
+    transition: color 0.3s ease; /* Transition fluide pour la couleur */
+}
+
+a:hover {
+    color: #ff4d77; /* Rose plus foncé au survol */
+    text-decoration: underline; /* Souligner au survol */
+}
+
+/* Style pour les messages d'erreur */
+p[style*="color: red"] {
+    background-color: #fff1f3; /* Fond rose très pâle pour les messages d'erreur */
+    padding: 12px; /* Espace à l'intérieur */
+    border: 1px solid #ff9999; /* Bordure rouge-rose */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 15px; /* Espace en dessous */
+    color: #ff4d77; /* Texte rose foncé */
+}
